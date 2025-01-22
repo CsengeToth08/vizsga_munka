@@ -1,0 +1,21 @@
+/*------------------------------------kapcsolat.html---------------------------------------------------------------------------------*/
+
+/*kapcsolat oldal térkép formázása*/
+.google-map {
+    width: 80%;  /* A térkép szélessége 80% */
+    margin: 0 auto;  /* Középre igazítás */
+}
+
+.google-map iframe {
+    width: 100%;    /* A térkép szélessége a szülő elem szélességéhez igazítva */
+    height: 400px;  /* Állítható magasság */
+    border: none;   /* A térkép körüli keret eltávolítása */
+}
+
+/* Kép stílus - középre igazítás és 80%-os szélesség */
+#ocLogo {
+    width: 80%;     /* A kép szélessége 80% */
+    display: block; /* Kép blokk típusú elem legyen */
+    margin: 20px auto; /* Kép középre igazítása */
+}
+/*------------------------------------kapcsolat.html---------------------------------------------------------------------------------*/

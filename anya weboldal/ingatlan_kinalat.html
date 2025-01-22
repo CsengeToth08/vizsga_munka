@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kállai Rózsa ingatlanszakértő</title>
+    <link rel="stylesheet" href="ingatlan_kinalat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigáció -->
+    <nav>
+        <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="index.html">Főoldal</a>
+            <a href="szolgaltatasok.html">Szolgáltatások</a>
+            <a href="ingatlan_kinalat.html">Ingatlan kínálat</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+            <a href="rolam.html">Rólam</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+<div class="hero">
+    <h1>Találd meg álmaid otthonát még ma!!</h1>
+    <div class="hero_content">
+        <p>Kínálatomban a legjobb ingatlanok várnak Rád, <br>
+            személyre szabott ajánlatokkal, hogy könnyedén <br>
+            rátalálj a tökéletes Otthonra vagy befektetésre.</p>
+        
+        <!-- Képek konténer -->
+        <div class="hero_images">
+            <img src="./img/sajat_logo.png" alt="Cég logója" class="image-logo">
+            <img src="./img/kallai_rozsa.jpg" alt="Kállai Rózsa portré" class="image-portrait">
+        </div>
+
+        <!-- Tartalmi szekció -->
+        <section>
+            <p>Egyedi, prémium bemutatással 
+                az ingatlanod olyan értéket kap, 
+                amelytől magasan kiemelkedik a piacon.
+            </p>
+            <p>Mondj búcsút a felesleges érdeklődőknek! 
+                Csak azok a vevők lépnek be az ingatlanodba, 
+                akik már az online bemutató alapján 
+                beleszerettek a házba.
+            </p>
+            <br>
+
+                <button onclick="window.location.href='tel:+36704544871';">Lépj velem kapcsolatba!</button> 
+           
+
+        </section>
+
+       <br>
+       <br>
+        
+    </div>
+</div>
+
+<hr>
+
+        <!-- Ingatlan Kínálat -->
+        <div>
+            <h2>Kínálatomban lévő ingatlanok:</h2>
+            <main class="property-list">
+                <div class="property-card" onclick="showAdditionalImages(1)">
+                    <img src="./img/ház1.jpg" alt="Ház 1">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 49 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 123 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(2)">
+                    <img src="./img/ház2.jpg" alt="Ház 2">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 29 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 123 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(3)">
+                    <img src="./img/ház3.jpg" alt="Ház 3">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 21 500 000 Ft</p>
+                        <p><strong>Terület:</strong> 95 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(4)">
+                    <img src="./img/ház4.jpg" alt="Ház 4">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 25 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 150 m²</p>
+                        <p><strong>Szobák:</strong> 2</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(5)">
+                    <img src="./img/ház5.jpg" alt="Ház 5">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 28 500 000 Ft</p>
+                        <p><strong>Terület:</strong> 56 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(6)">
+                    <img src="./img/ház6.jpg" alt="Ház 6">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 33 490 000 Ft</p>
+                        <p><strong>Terület:</strong> 62 m²</p>
+                        <p><strong>Szobák:</strong> 2</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(7)">
+                    <img src="./img/ház7.jpg" alt="Ház 7">
+                    <div class="property-info">
+                        <p><strong>KIADÓ</strong></p>
+                        <p><strong>Ár:</strong> 70 000 Ft</p>
+                        <p><strong>Terület:</strong> 70 m²</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(8)">
+                    <img src="./img/ház8.jpg" alt="Ház 8">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 38 000 000 Ft</p>
+                        <p><strong>Terület:</strong> 96,5 m²</p>
+                        <p><strong>Szobák:</strong> 2</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(9)">
+                    <img src="./img/ház9.jpg" alt="Ház 9">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 59 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 100,6 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(10)">
+                    <img src="./img/ház10.jpg" alt="Ház 10">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 51 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 112 m²</p>
+                        <p><strong>Szobák:</strong> 2</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(11)">
+                    <img src="./img/ház11.jpg" alt="Ház 11">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 49 900 000 Ft
+                        </p>
+                        <p><strong>Terület:</strong> 113 m²</p>
+                        <p><strong>Szobák:</strong> 2</p>
+                    </div>
+                </div>
+                <div class="property-card" onclick="showAdditionalImages(12)">
+                    <img src="./img/ház12.jpg" alt="Ház 12">
+                    <div class="property-info">
+                        <p><strong>Ár:</strong> 38 900 000 Ft</p>
+                        <p><strong>Terület:</strong> 151 m²</p>
+                        <p><strong>Szobák:</strong> 3</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Modal a további képekhez -->
+            <div id="imageModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="modalImages"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!-- video beágyazás -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jGJArxXkNps?start=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+
+
+
+
+
+    <!-- Lábléc -->
+    <footer>
+        <h2>Kapcsolat</h2>
+        <div class="contact-info">
+            <p>+36/70/454-4871</p>
+            <p>kallai.rozsa@oc.hu</p>
+            <a href="https://www.oc.hu/index.php/munkatarsaink/kallai-rozsa" target="_blank">Munkahelyi elérhetőségem:</a> <br> <br>
+            <a href="https://www.facebook.com/rozsa.kallai.7" target="_blank">Facebook oldalam</a>
+        </div>
+        <p>&copy; 2025 Kállai Rózsa ingatlanszakértő. Minden jog fenntartva.</p>
+    </footer>
+
+    <script>
+        /*hamburger menü */
+            function toggleMenu() {
+            const menu = document.getElementById("navbarMenu");
+            menu.classList.toggle("responsive");
+            }
+       </script>
+       
+</body>
+</html>

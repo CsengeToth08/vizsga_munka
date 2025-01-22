@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kállai Rózsa ingatlanszakértő</title></head>
+    <link rel="stylesheet" href="szolgaltatasok.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"><body>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navigáció -->
+    <nav>
+      
+        <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="index.html">Főoldal</a>
+            <a href="szolgaltatasok.html">Szolgáltatások</a>
+            <a href="ingatlan_kinalat.html">Ingatlan kínálat</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+            <a href="rolam.html">Rólam</a>
+        </div>
+    </nav>
+
+      <!-- Hero -->
+<div class="hero">
+    <h1>Találd meg álmaid otthonát még ma!!</h1>
+    <div class="hero_content">
+        <p>Kínálatomban a legjobb ingatlanok várnak Rád, <br>
+            személyre szabott ajánlatokkal, hogy könnyedén <br>
+            rátalálj a tökéletes Otthonra vagy befektetésre.</p>
+        
+        <!-- Képek konténer -->
+        <div class="hero_images">
+            <img src="./img/sajat_logo.png" alt="Cég logója" class="image-logo">
+            <img src="./img/kallai_rozsa.jpg" alt="Kállai Rózsa portré" class="image-portrait">
+        </div>
+
+        <!-- Tartalmi szekció -->
+        <section>
+            <p>Egyedi, prémium bemutatással 
+                az ingatlanod olyan értéket kap, 
+                amelytől magasan kiemelkedik a piacon.
+            </p>
+            <p>Mondj búcsút a felesleges érdeklődőknek! 
+                Csak azok a vevők lépnek be az ingatlanodba, 
+                akik már az online bemutató alapján 
+                beleszerettek a házba.
+            </p>
+            <br>
+
+                <button onclick="window.location.href='tel:+36704544871';">Lépj velem kapcsolatba!</button> 
+           
+
+        </section>
+
+       <br>
+       <br>
+        
+    </div>
+</div>
+
+<hr>
+
+     <!-- Content -->
+      <div>
+            <div>
+                <div class="Szolgáltatasaim">                
+                    <h2>Szolgáltatásaim:</h2>
+                </div>
+                
+                <div class="berbeadas">
+                    <h3>Bérbeadás</h3>            
+                    <p>"Maximális hozam, minimális stressz!" <br>
+                        <br>
+                        Szeretnéd kiadni ingatlanodat, de nem tudod, hogyan kezdj hozzá? <br> 
+                        Bízd rám a bérbeadás minden lépését! Gondoskodom a megfelelő bérlő megtalálásáról, a szerződéskötésről, és arról, hogy ingatlanod a lehető legjobb feltételekkel keljen el. <br>
+                        <br> 
+                        Hozz ki többet ingatlanodból – kényelmesen, biztonságosan, és gyorsan!</p></div>
+            
+                <div class="eladas">
+                    <h3>Eladás</h3>            
+                    <p>"Az álomvevő már vár rád  segítek megtalálni!" <br>
+                    <br>
+                        Ingatlanod eladása életed egyik legfontosabb döntése. Éppen ezért minden részletre odafigyelek, hogy a folyamat gördülékeny, biztonságos és nyereséges legyen számodra. Professzionális hirdetések, személyre szabott tanácsadás és a legjobb ár elérése – ez az, amit garantálok. Bízd rám, hogy otthonod a legjobb kezekbe kerüljön</p>
+                </div>
+                
+                <div class="vasarlas">
+                    <h3>Vásárlás</h3>
+                <p>"Otthon, amely többet jelent négy falnál." <br>
+                    <br>
+                    Az álomotthon megtalálása nem könnyű feladat  de velem egyszerűbbé válik! Segítek feltárni a lehetőségeket, személyre szabott ajánlatokat nyújtok, és végigvezetlek a vásárlás minden lépésén. <br> 
+                    Legyen szó első otthonról, befektetésről vagy álmaid házáról, együtt biztosan megtaláljuk!</p>
+                </div>
+            </div>
+            <br>
+      </div>
+
+      
+     <!-- Lábléc -->
+     <footer>
+        <h2>Kapcsolat</h2>
+
+        <div class="contact-info">
+            <p>+36/70/454-4871</p>
+            <p>kallai.rozsa@oc.hu</p>
+            <a href="https://www.oc.hu/index.php/munkatarsaink/kallai-rozsa" target="_blank">Munkahelyi elérhetőségem:</a> <br> <br>
+            <a href="https://www.facebook.com/rozsa.kallai.7" target="_blank">Facebook oldalam</a>
+        </div>
+
+        <p>&copy; 2025 Kállai Rózsa ingatlanszakértő. Minden jog fenntartva.</p>
+    </footer>
+
+    <script>
+        /*hamburger menü */
+            function toggleMenu() {
+            const menu = document.getElementById("navbarMenu");
+            menu.classList.toggle("responsive");
+            }
+       </script>
+       
+</body>
+</html>

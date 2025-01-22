@@ -1,0 +1,84 @@
+/* Üdvözlő szöveg kiemelése */
+.content h2 {
+    font-family: 'Quicksand', sans-serif; /* Modern, könnyen olvasható betűtípus */
+    font-size: 36px; /* Nagyobb címsor */
+    color: #A48C84; /* Meleg barna szín a címhez */
+    text-align: center; /* Középre igazítás */
+    margin-bottom: 15px; /* Térköz a cím alatt */
+    letter-spacing: 2px; /* Kicsit tágabb betűköz */
+    text-transform: uppercase; /* Nagybetűs szöveg */
+    font-weight: bold; /* Erős kiemelés */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Finom árnyék a szövegen */
+}
+
+/* Üdvözlés szövegének kiemelése */
+.content h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    color: #BC9284; /* Kicsit világosabb barna */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600; /* Felerősített súly */
+}
+
+/* Törzs szöveg kiemelése */
+.content p {
+    font-family: Arial, sans-serif; /* Tiszta és modern betűtípus */
+    font-size: 18px; /* Közepes méret */
+    color: #333333; /* Sötét szürke szín */
+    line-height: 1.8; /* Tágasabb sorköz */
+    text-align: justify; /* Igazított szöveg a könnyebb olvashatóságért */
+    max-width: 800px; /* Szélesség korlátozása */
+    margin: 20px auto; /* Középre igazítás, térköz a szöveg körül */
+    background-color: #f1e8e3; /* Halvány bézs háttér */
+    padding: 20px; /* Térköz a szöveg körül */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
+
+/* Erősebb figyelemfelkeltés */
+.content p strong {
+    color: #BC9284; /* Erősebb kiemelés barna színnel */
+    font-weight: bold;
+}
+
+/* Linkek formázása */
+.content a {
+    color: #A48C84; /* Link színe barna */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Színváltozás hover hatás */
+}
+
+.content a:hover {
+    color: #BC9284; /* Hover szín */
+}
+
+
+
+
+/* Képek div */
+.kepek {
+    display: flex; /* Flexbox elrendezés */
+    justify-content: center; /* Képek középre igazítása */
+    gap: 20px; /* Képek közötti térköz */
+    flex-wrap: wrap; /* Ha nem férnek el egy sorban, új sorba kerülnek */
+    max-width: 1200px;
+    margin: 20px auto; /* Középre igazítás */
+}
+
+/* Kép stílusok */
+.kepek img {
+    width: 48%; /* Két kép legyen egy sorban, tehát 48%-ot adunk mindegyiknek */
+    height: auto; /* Arányos magasság */
+    border-radius: 10px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Árnyék a képeken */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animáció a hover effektushoz */
+    cursor: pointer; /* Kattinthatóság jelezése */
+}
+
+/* Hover effektus a képeken */
+.kepek img:hover {
+    transform: scale(1.05); /* Kép nagyítása hover hatásra */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Erősebb árnyék */
+}

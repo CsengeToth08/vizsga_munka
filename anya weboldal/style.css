@@ -1,0 +1,239 @@
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffffff, #D8C1B9);
+
+}
+
+/*--------------------------------nav rész-------------------------------------------------------------------------*/
+nav {
+    position: fixed; /* A navigációt rögzítjük a képernyő tetejére */
+    top: 0; /* A tetején lesz */
+    left: 0; /* Balra igazítjuk */
+    width: 100%; /* Kitölti a teljes szélességet */    
+    background-color: #d8c2ba;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Hamburger menü alapértelmezett stílusok */
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.navbar-menu a { /*menü szöveg formázása*/
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+}
+.navbar-menu a:hover { /*kijelölt menüpont effektje*/
+    background-color: #A48C84;
+    border-radius: 30px;
+}
+.navbar-toggler {
+    display: none; /* A hamburger menü rejtve alapértelmezés szerint */
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+
+
+/* Mobilra optimalizált menü */
+.navbar-menu.responsive a {
+    margin: 10px 0; /* A linkek között távolságot adunk */
+    text-align: center; /* A linkek középre igazítva */
+}
+
+/*----------------------------------nav rész-----------------------------------------------------------------------*/
+
+
+
+/*----------------------------------hero rész-----------------------------------------------------------------------*/
+
+/* Hero szekció */
+.hero {
+    margin-top: 40px;
+    text-align: center; /* Középre igazított tartalom */
+    padding: 20px; /* Térköz a tartalom körül */
+
+}
+
+.hero h1 {
+    font-size: 42px; /* Nagy méret a címsorhoz */
+    color: #020202; 
+    margin-bottom: 20px; /* Térköz a címsor alatt */
+}
+
+.hero_content {
+    font-family: Arial, sans-serif; /* Letisztult betűtípus */
+    color: #000000; /* Szöveg színe */
+    font-size: 20px;
+    line-height: 1.6; /* Könnyebb olvashatóság */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertikális elrendezés */
+    align-items: center; /* Vízszintes középre igazítás */
+    justify-content: center; /* Függőleges középre igazítás */
+    text-align: center; /* A szöveg középre igazítása */
+}
+
+/* Képek elrendezése */
+.hero .image-logo,
+.hero .image-portrait {
+    display: inline-block; /* Egymás mellé helyezi a képeket */
+    width: 150px; /* Azonos szélesség */
+    height: 150px; /* Azonos magasság */
+    object-fit: cover; /* A képek arányos kitöltése */
+    margin: 10px; /* Térköz a képek között */
+    border-radius:50%; /* Kör alakú képek */
+    box-shadow: 0 2px 6px rgba(197, 150, 111, 0.1); /* Árnyék a képekhez */
+}
+
+/* Tartalmi szekció */
+.hero_content section {
+    margin-top: 20px; /* Térköz a képek és a szöveges rész között */
+    padding: 20px; /* Térköz a szöveg körül */
+    background-color: #f1e8e3; /* Fehér háttér */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Árnyék */
+    display: inline-block; /* Tartalom szépen középen */
+    text-align: left; /* Szöveg igazítása balra */
+}
+
+/* Gomb stílus */
+.hero_content button {
+    background-color: #BC9284; /* Meleg barna szín */
+    color: #000000; /* Fehér szöveg */
+    padding: 10px 20px; /* Térköz a gombban */
+    border: none; /* Keret nélküli gomb */
+    border-radius: 20px; /* Lekerekített gomb */
+    font-size: 18px; /* Közepes betűméret */
+    cursor: pointer; /* Mutató az egér fölött */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero_content button:hover {
+    background-color: #866256; /* Sötétebb barna szín hover állapotban */
+    transform: scale(1.05); /* Finom nagyítás hover állapotban */
+}
+
+
+
+/*----------------------------------hero rész---------------------------------------------*/
+
+
+
+
+/*----------------------------------h1 h2 h3---------------------------------------------*/
+
+h1, h2, h3{
+    font-family: "Playwrite AU SA", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+/*----------------------------------h1 h2 h3--------------------------------------------*/
+
+
+/*----------------------------------footer---------------------------------------------*/
+/* Lábléc stílusa */
+footer {
+    padding: 40px 20px;
+    font-size: 20px;
+    background-image: url(./img/footer_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+footer p:last-child {
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #611900;
+}
+
+
+/*-----------------------------------footer----------------------------------------------*/
+
+/*reszponzivitás*/
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero .image-logo, .hero .image-portrait {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero_content {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero_content button {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero_content button {
+        font-size: 16px;
+    }
+
+    .navbar-menu a {
+        font-size: 14px;
+    }
+}
+
+

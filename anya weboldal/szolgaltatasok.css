@@ -1,0 +1,75 @@
+/*-----------------------------szolgaltatasok.html--------------------------------------------------------------------*/
+.Szolgáltatasaim {
+    text-align: center;  /* Szöveg középre igazítása */
+    margin: 0 auto;  /* A div középre igazítása a szülő konténeren belül */
+    max-width: 600px;  /* A konténer szélességét korlátozzuk, ha szükséges */
+}
+.Szolgáltatasaim h2 {
+    font-size: 2em;  /* A cím nagyobb legyen */
+    font-weight: bold;  /* A cím félkövér */
+    margin-top: 20px;  /* Felül egy kis térköz */
+}
+
+
+
+.berbeadas, .eladas, .vasarlas {
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 1200px; /* Kisebb szélesség */
+    margin: 0 auto; /* Konténer középre igazítása */
+    padding: 20px; /* Térköz a szöveg körül */
+    text-align: center; /* Szöveg középre igazítása */
+    transition: all 0.3s ease; /* Zökkenőmentes animáció */
+    margin-bottom: 30px; /* Térköz a szekciók között */
+}
+
+/* Háttérszínek egyedileg */
+.berbeadas {
+    background-image: linear-gradient(135deg, rgba(199, 173, 157, 0.8), rgba(132, 107, 86, 0.8)), url(./img/blurry-gradient-haikei\ \(3\).png);
+}
+.eladas {
+    background-image: linear-gradient(135deg, rgba(122, 73, 60, 0.8), rgba(132, 107, 86, 0.8)), url(./img/blurry-gradient-haikei\ \(3\).png);
+}
+.vasarlas {
+    background-image: linear-gradient(135deg, rgba(198, 115, 94, 0.8), rgba(132, 107, 86, 0.8)), url(./img/blurry-gradient-haikei\ \(3\).png);
+
+}
+
+/* Hover effekt - kiemelés a szekciókra */
+.berbeadas:hover, .eladas:hover, .vasarlas:hover {
+    transform: scale(1.05); /* Nagyobb hatás */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2); /* Erősebb árnyék */
+}
+
+/* Szövegek kiemelése */
+.berbeadas h3, .eladas h3, .vasarlas h3 {
+    font-size: 24px; /* Nagyobb címsor */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.berbeadas p, .eladas p, .vasarlas p {
+    font-size: 20px; /* Közepes szövegméret */
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Mobilra optimalizálva */
+@media (max-width: 768px) {
+    .berbeadas, .eladas, .vasarlas {
+        padding: 20px; /* Kisebb padding mobilon */
+    }
+
+    .berbeadas h3, .eladas h3, .vasarlas h3 {
+        font-size: 20px; /* Kisebb címsor */
+    }
+
+    .berbeadas p, .eladas p, .vasarlas p {
+        font-size: 14px; /* Kisebb szöveg mobilon */
+    }
+}
+
+/*-----------------------------szolgaltatasok.html--------------------------------------------------------------------*/

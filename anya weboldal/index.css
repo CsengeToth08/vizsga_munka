@@ -1,0 +1,284 @@
+/*--------------------------------index.html-----------------------------------------------*/
+/*eladóknak tartalom formázása*/
+.eladoknak{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px; /* Térköz az Eladóknak rész aljára */
+    max-width: 1200px; /* Maximális szélesség a tartalomhoz */
+    padding: 20px; /* Külső térköz */
+   
+    background-image: url(./img/blob-scene-haikei.png);
+    background-size: cover; /* A kép kitölti a teljes szakaszt */
+}
+
+/* Szöveg és kép elrendezése */
+.service-container {
+    display: flex;
+    justify-content: space-between; /* Szöveg balra, kép jobbra */
+    align-items: flex-start;
+    width: 100%; /* Szélesség beállítása */
+    gap: 20px; /* Térköz a szöveg és a kép között */
+}
+
+/* Szöveg stílusa */
+.service-text {
+    flex: 1; /* Szöveg rugalmasan tölti ki a teret */
+    text-align: left; /* Balra igazított szöveg */
+    padding: 20px; /* Belső térköz */
+    background-color: #e9dad5; /* Világos háttérszín */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 6px rgba(90, 66, 46, 0.5); /* Finom árnyék */
+    font-size: 20px;    /* Szöveg mérete */
+    line-height: 1.6; /* Szöveg sorköze */
+}
+
+/* Kép stílusa */
+#inlineImg {
+    flex: 0 0 auto; /* A kép fix szélességű marad */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+}
+
+/* Címsorok stílusa */
+.eladoknak h2 {
+    text-align: center; /* Címsor középre igazítása */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.eladoknak h3 {
+    text-align: center; /* Alcím középre igazítása */
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555; /* Halványabb szín az alcímhez */
+}
+
+/* Gomb stílusa */
+.eladoknak button {
+    display: block; /* A gomb blokk szintű elem legyen */
+    margin-left: auto; /* Bal oldali margó automatikusan, így jobbra igazítja a gombot */
+    margin-right: 0; /* Jobb oldalon nem hagyunk margót */
+    
+    padding: 10px 20px; /* Gomb méretezése */
+    background-color: #BC9284; /* Gomb színe */
+    color: #000000; /* Gomb szöveg színe */
+    border: #555; 
+    border-radius: 5px; /* Lekerekített sarkok */
+    cursor: pointer; /* Mutatóváltás kattintásra */
+    font-size: 16px;
+    
+}
+.eladoknak button:hover {
+    text-decoration: none; /* Hover állapotban is megakadályozza az aláhúzást */
+}
+
+
+/* Vevőknek tartalom formázása */
+.vevoknek {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 0; /* Biztonság kedvéért nulla margót teszünk itt, ha szükséges */
+    max-width: 1200px; /* Maximális szélesség */
+    padding: 20px; /* Külső térköz */
+    background-image: url(./img/blob-scene-haikei\ \(1\).png);
+    background-size: cover; /* Háttérkép kitölti a szakaszt */
+    background-repeat: no-repeat;
+}
+
+/* Szöveg és kép elrendezése */
+.service-container_vevoknek {
+    display: flex;
+    justify-content: space-between; /* Kép balra, szöveg jobbra */
+    align-items: flex-start;
+    width: 100%; /* A konténer szélessége */
+    gap: 20px; /* Térköz a kép és szöveg között */
+}
+
+/* Szöveg stílusa */
+.service-text_vevoknek {
+    flex: 1; /* Rugalmasan tölti ki a rendelkezésre álló helyet */
+    text-align: left; /* Balra igazított szöveg */
+    padding: 20px; /* Belső térköz */
+    background-color: #e9dad5; /* Világos háttérszín */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 6px rgba(90, 66, 46, 0.5); /* Árnyék */
+    font-size: 20px; /* Szöveg mérete */
+    line-height: 1.6; /* Kellemes sorköz */
+}
+
+/* Kép stílusa */
+.service-container_vevoknek img {
+    flex: 0 0 auto; /* A kép nem változtatja a méretét */
+    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+    height: 300px; /* Kép magasságának rögzítése */
+}
+
+/* Címsor stílusok */
+.vevoknek h2 {
+    text-align: center; /* Címsor középre igazítása */
+    font-size: 28px; /* Nagyobb méret */
+    margin-bottom: 10px;
+}
+
+.vevoknek h3 {
+    text-align: center; /* Alcím középre igazítása */
+    font-size: 20px; /* Kisebb méret */
+    margin-bottom: 20px;
+    color: #555; /* Halványabb szín */
+}
+
+/* Listaelemek formázása */
+.vevoknek ul {
+    list-style-type: disc; /* Alapértelmezett listaelem-stílus */
+    margin: 10px 0 0 20px; /* Bal margó a lista jobbra igazításához */
+    text-align: left; /* Listaelemek balra igazítása */
+}
+
+.vevoknek li {
+    line-height: 1.6; /* Kellemes sorköz */
+}
+
+/* Gomb stílusa */
+.vevoknek button {
+    display: block;
+    text-decoration: none;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 10px 20px; /* Gomb méretezése */
+    background-color: #e9dad5; /* Gomb színe */
+    color: #000000; /* Szöveg színe */
+    border: none; /* Keret eltávolítása */
+    border-radius: 5px; /* Lekerekített sarkok */
+    cursor: pointer; /* Mutató váltás kattintásra */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Hover animáció */
+}
+
+.vevoknek button:hover {
+    background-color: #C0A7A0; /* Hover állapot színe */
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+.tablazat {
+    margin-top: 40px; /* Térköz a táblázat előtt */
+    margin: 20px auto; /* Középre igazítás és térköz a környező elemekhez */
+    max-width: 1200px; /* Maximális szélesség */
+    text-align: center; /* Középre igazított szöveg */
+    font-family: Arial, sans-serif; /* Letisztult betűtípus */
+}
+
+.tablazat h2 {
+    font-size: 28px; /* Nagyobb betűméret a címsornak */
+    margin-bottom: 20px; /* Térköz a táblázat előtt */
+    color: #444; /* Halványabb szövegszín */
+}
+
+table {
+    width: 100%; /* Táblázat kitölti a rendelkezésre álló teret */
+    border-collapse: collapse; /* Szegélyek összefűzése */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Árnyék a táblázathoz */
+    border-radius: 8px; /* Lekerekített sarkok */
+    overflow: hidden; /* Körvonal elrejtése a lekerekítéseknél */
+}
+
+thead th {
+    background-color: #D8C1B9; /* Világos bézs szín a fejléc hátterének */
+    color: #000; /* Fejléc szövegének színe */
+    padding: 15px; /* Belső térköz */
+    font-size: 20px; /* Nagyobb betűméret a fejlécnek */
+    font-weight: bold; /* Vastagított szöveg */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F9F5F3; /* Világos háttér az alternáló sorokhoz */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFF; /* Fehér háttér az alternáló sorokhoz */
+}
+
+tbody td {
+    padding: 12px; /* Belső térköz a cellákban */
+    font-size: 18px; /* Szöveg mérete */
+    color: #333; /* Szöveg színe */
+    border-bottom: 1px solid #ddd; /* Finom szegély a sorok között */
+}
+
+tbody tr:last-child td {
+    border-bottom: none; /* Az utolsó sor alatt nincs szegély */
+}
+
+tbody tr:hover {
+    background-color: #f1e9e6; /* Finom árnyékolás egérmutató fölött */
+    cursor: default; /* Mutató ikon alapértelmezett marad */
+}
+
+
+/*--------------------------------index.html-----------------------------------------------*/
+
+
+
+
+@media (max-width: 1024px) {
+    /* Általános konténerek szélessége */
+    .eladoknak, .vevoknek, .tablazat {
+        max-width: 90%; /* Szélesség csökkentése kisebb képernyőkhöz */
+        padding: 15px; /* Külső térköz csökkentése */
+    }
+
+    /* Képek kisebb méretezése */
+    #inlineImg, .service-container_vevoknek img {
+        width: 100%; /* A kép mérete igazodik */
+        height: auto; /* Arányosan méretezett kép */
+    }
+
+    /* Táblázat szövegek kisebb mérete */
+    thead th, tbody td {
+        font-size: 16px; /* Betűméret csökkentése */
+        padding: 10px; /* Kevesebb belső térköz */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Flexbox konténerek függőleges elrendezése */
+    .service-container, .service-container_vevoknek {
+        flex-direction: column; /* Függőleges elrendezés */
+        align-items: stretch; /* Elemek kitöltik a teljes szélességet */
+        gap: 15px; /* Térköz a szöveg és a kép között */
+    }
+
+    /* Képek kisebb méretezése */
+    #inlineImg, .service-container_vevoknek img {
+        width: 100%; /* A kép mérete igazodik */
+        height: auto; /* Arányosan méretezett kép */
+    }
+
+    .service-text, .service-text_vevoknek {
+        width: 100%; /* Tartalom teljes szélességben */
+    }
+
+    /* Gombok középre helyezése */
+    .eladoknak button, .vevoknek button {
+        margin: 20px auto 0 auto; /* Automatikusan középre igazítva */
+        width: 80%; /* Szélesség növelése */
+    }
+
+    /* Táblázat reszponzív görgethetősége */
+    table {
+        display: block; /* Blokkos megjelenés */
+        overflow-x: auto; /* Vízszintes görgetés */
+        white-space: nowrap; /* Sorok egy sorban maradnak */
+    }
+}

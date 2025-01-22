@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kállai Rózsa ingatlanszakértő</title></head>
+    <link rel="stylesheet" href="kapcsolat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"><body>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navigáció -->
+    <nav>
+      
+        <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="index.html">Főoldal</a>
+            <a href="szolgaltatasok.html">Szolgáltatások</a>
+            <a href="ingatlan_kinalat.html">Ingatlan kínálat</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+            <a href="rolam.html">Rólam</a>
+        </div>
+    </nav>
+
+      <!-- Hero -->
+<div class="hero">
+    <h1>Találd meg álmaid otthonát még ma!!</h1>
+    <div class="hero_content">
+        <p>Kínálatomban a legjobb ingatlanok várnak Rád, <br>
+            személyre szabott ajánlatokkal, hogy könnyedén <br>
+            rátalálj a tökéletes Otthonra vagy befektetésre.</p>
+        
+        <!-- Képek konténer -->
+        <div class="hero_images">
+            <img src="./img/sajat_logo.png" alt="Cég logója" class="image-logo">
+            <img src="./img/kallai_rozsa.jpg" alt="Kállai Rózsa portré" class="image-portrait">
+        </div>
+
+        <!-- Tartalmi szekció -->
+        <section>
+            <p>Egyedi, prémium bemutatással 
+                az ingatlanod olyan értéket kap, 
+                amelytől magasan kiemelkedik a piacon.
+            </p>
+            <p>Mondj búcsút a felesleges érdeklődőknek! 
+                Csak azok a vevők lépnek be az ingatlanodba, 
+                akik már az online bemutató alapján 
+                beleszerettek a házba.
+            </p>
+            <br>
+
+                <button onclick="window.location.href='tel:+36704544871';">Lépj velem kapcsolatba!</button> 
+           
+
+        </section>
+
+       <br>
+       <br>
+        
+    </div>
+</div>
+
+<hr>
+    
+    <!-- Google Térkép beágyazása -->
+    <div class="google-map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.333952200974!2d19.77794907669722!3d47.03367742736445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741632be8f446e1%3A0x138e8080aded0f79!2sOtthon%20Centrum%20Nagyk%C5%91r%C3%B6s!5e0!3m2!1sen!2shu!4v1736187089300!5m2!1sen!2shu" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div>
+        <img src="./img/oc_video.jpg" alt="" id="ocLogo">
+    </div>
+
+     <!-- Lábléc -->
+     <footer>
+        <h2>Kapcsolat</h2>
+
+        <div class="contact-info">
+            <p>Keressen bizalommal: <a href="tel: +36/70/454-4871">+36/70/454-4871</a></p>
+            <p>kallai.rozsa@oc.hu</p>
+            <a href="https://www.oc.hu/index.php/munkatarsaink/kallai-rozsa" target="_blank">Munkahelyi elérhetőségem:</a> <br> <br>
+            <a href="https://www.facebook.com/rozsa.kallai.7" target="_blank">Facebook oldalam</a>
+        </div>
+
+        <p>&copy; 2025 Kállai Rózsa ingatlanszakértő. Minden jog fenntartva.</p>
+    </footer>
+
+    <script>
+        /*hamburger menü */
+            function toggleMenu() {
+            const menu = document.getElementById("navbarMenu");
+            menu.classList.toggle("responsive");
+            }
+       </script>
+       
+</body>
+</html>
